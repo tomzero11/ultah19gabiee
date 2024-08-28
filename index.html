@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="comp/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="greeting">Happy Birthday, SAYANGKUUUUU!</h1>
+      </header>
+      <section class="intro">
+        <p id="animatedText">
+          "Happy birthday, sayangku! Aku sangat bersyukur kamu ada di hidupku.
+          Dari awal kita bertemu hingga saat ini, kamu selalu menjadi sumber
+          kebahagiaan dan inspirasi bagiku. Semoga hari ini penuh dengan tawa,
+          cinta, dan kenangan indah yang akan kita kenang selamanya. Aku
+          mencintaimu dengan segenap hatiku, dan aku akan selalu ada di sini
+          untukmu, apa pun yang terjadi."
+        </p>
+      </section>
+      <section class="gallery">
+        <h2>CANTIKKNYA AKUUUU</h2>
+        <div class="photos">
+          <img src="./asset/asset1.jpeg" alt="Photo 1" />
+          <img src="./asset/asset2.jpeg" alt="Photo 2" />
+          <img src="./asset/asset3.jpeg" alt="Photo 3" />
+        </div>
+      </section>
+
+      <!-- Audio controls -->
+      <div class="audio-controls">
+        <button id="playButton">Play</button>
+        <button id="pauseButton">Pause</button>
+        <label for="volumeControl">Volume:</label>
+        <input
+          type="range"
+          id="volumeControl"
+          min="0"
+          max="1"
+          step="0.1"
+          value="0.5"
+        />
+      </div>
+
+      <!-- <audio id="backgroundMusic" loop>
+        <source src="./asset/22.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio> -->
+      <audio id="backgroundMusic" loop>
+        <source src="./asset/22.mp3" type="audio/mpeg" />
+        <source src="./asset/22.ogg" type="audio/ogg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <script src="./comp/script.js"></script>
+    </div>
+  </body>
+</html>
